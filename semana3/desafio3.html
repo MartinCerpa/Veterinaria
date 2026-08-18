@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Universidad - Mobile First</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar responsive -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                Mi Universidad
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuUniversidad">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuUniversidad">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Cursos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Perfil
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Información principal -->
+    <header class="container py-4 py-md-5">
+
+        <h1 class="mb-3">
+            Portal Universitario
+        </h1>
+
+        <p class="lead">
+            Revisa tus próximas actividades y cursos.
+        </p>
+
+        <!-- Botón ancho completo en móvil -->
+        <div class="d-grid d-md-block">
+            <a href="#" class="btn btn-primary">
+                Ver mis cursos
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- Contenido -->
+    <main class="container pb-5">
+
+        <h2 class="h4 mb-4">
+            Próximas actividades
+        </h2>
+
+        <div class="row g-3 g-md-4">
+
+
+            <!-- Urgente primero en móvil -->
+            <div class="col-12 col-md-6 col-lg-4
+                        order-1 order-lg-3">
+
+                <div class="card h-100 border-danger">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-danger mb-2">
+                            Urgente
+                        </span>
+
+                        <h5 class="card-title">
+                            Ingeniería de Software
+                        </h5>
+
+                        <p class="card-text">
+                            Próxima actividad: Entrega de proyecto.
+                        </p>
+
+                        <a href="#" class="btn btn-outline-danger">
+                            Ver actividad
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Programación -->
+            <div class="col-12 col-md-6 col-lg-4
+                        order-2 order-lg-1">
+
+                <div class="card h-100">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark mb-2">
+                            Pendiente
+                        </span>
+
+                        <h5 class="card-title">
+                            Programación Web
+                        </h5>
+
+                        <p class="card-text">
+                            Próxima actividad: Taller Bootstrap.
+                        </p>
+
+                        <a href="#" class="btn btn-outline-primary">
+                            Ver actividad
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Base de Datos -->
+            <div class="col-12 col-md-6 col-lg-4
+                        order-3 order-lg-2">
+
+                <div class="card h-100">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success mb-2">
+                            Al día
+                        </span>
+
+                        <h5 class="card-title">
+                            Base de Datos
+                        </h5>
+
+                        <p class="card-text">
+                            Próxima actividad: Modelo relacional.
+                        </p>
+
+                        <a href="#" class="btn btn-outline-primary">
+                            Ver curso
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
